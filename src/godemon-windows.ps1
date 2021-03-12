@@ -18,7 +18,8 @@ If ($option -eq 2){
     mkdir "godemon/bin/"
     cd "$root"
     cd "./$version/godemon-$version"
-    <# mv "godemon.exe c:\Program Files\godemon\bin" #>
-    <# rm "-r $version" #>
-    <#rm "-r $version.zip"#>
+    mv godemon.exe C:\'Program Files'\godemon\bin
+    cd "$root" 
+    rm -r $version
+    rm -r "$version.zip"
 }
